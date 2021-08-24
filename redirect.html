@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Anonymous redirect</title>
+    <title>匿名跳转</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -92,24 +92,19 @@
 <body>
     <div class="main">
         <h1 class="title">
-            Anonymous redirect
+            匿名跳转
         </h1>
 
         <p class="text">
-            You are about to go to the following page:
-            <code id="currentUrl">https://example.org/</code>
+            你将要访问以下地址：
+            <code id="currentUrl">https://lovedoremi.com/</code>
         </p>
 
         <div class="wrap">
             <button type="button" class="button" id="redirectButton">
-                Take me there
+                现在访问
             </button>
         </div>
-
-        <footer>
-            The point of this page is to hide the source page from the target website to prevent all kinds of tracking.
-            <a href="https://github.com/AdguardTeam/AnonymousRedirect" class="link" target="_blank">Source code</a>.
-        </footer>
     </div>
 
     <script type="text/javascript">
@@ -173,7 +168,7 @@
 
         function performRedirect() {
             // Rick-rolling in case of wrong URL
-            window.location.href = url || 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+            window.location.href = url || 'https://lovedoremi.com';
         }
 
         var redirectButton = document.getElementById('redirectButton');
@@ -182,6 +177,5 @@
             redirectButton.addEventListener('click', performRedirect);
         }
     </script>
-
     <body>
 </html>
