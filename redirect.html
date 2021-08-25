@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>跳转</title>
+    <title>Redirect</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -87,22 +87,31 @@
             text-align: center;
         }
     </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-56RD2PZZFF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-56RD2PZZFF');
+    </script>
 </head>
 
 <body>
     <div class="main">
         <h1 class="title">
-            跳转
+            Redirect
         </h1>
 
         <p class="text">
-            你将要访问以下地址：
+            You are about to go to the following page:
             <code id="currentUrl">https://lovedoremi.com/</code>
         </p>
 
         <div class="wrap">
             <button type="button" class="button" id="redirectButton">
-                现在访问
+                Take me there
             </button>
         </div>
     </div>
